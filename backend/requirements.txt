@@ -1,0 +1,6 @@
+fastapi>=0.111
+uvicorn[standard]>=0.23
+deep-translator>=1.11
+langdetect>=1.0.9
+python-multipart>=0.0.9
+aiofiles>=23.2
