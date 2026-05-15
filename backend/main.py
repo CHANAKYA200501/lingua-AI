@@ -19,7 +19,10 @@ from langdetect import detect, detect_langs, DetectorFactory, LangDetectExceptio
 # Seed for consistent language detection
 DetectorFactory.seed = 0
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "translations.db")
+# Use /tmp on serverless environments like Vercel because the app directory is read-only
+is_vercel = os.environ.get("VERCEL") == "1" or os.environ.get("RENDER") == "true"
+db_dir = "/tmp" if is_vercel else os.path.dirname(__file__)
+DB_PATH = os.path.join(db_dir, "translations.db")
 
 # BUG-11 FIX: Thread-safe SQLite connection manager
 _db_lock = threading.Lock()
