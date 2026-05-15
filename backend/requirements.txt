@@ -4,3 +4,5 @@ deep-translator>=1.11
 langdetect>=1.0.9
 python-multipart>=0.0.9
 aiofiles>=23.2
+SpeechRecognition>=3.10
+pydub>=0.25.1
