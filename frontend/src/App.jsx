@@ -421,7 +421,7 @@ function App() {
   // Uses a SEPARATE SpeechRecognition instance for wake word detection.
   // ═══════════════════════════════════════
   useEffect(() => {
-    if (!passiveListening || assistantState !== STATE.SLEEPING) {
+    if (!passiveListening || assistantState !== STATE.SLEEPING || showEnrollment) {
       // Stop passive listener — use small delay to avoid race condition (BUG-12)
       const timer = setTimeout(() => {
         if (passiveRecRef.current) {
@@ -493,7 +493,7 @@ function App() {
       passiveRecRef.current = null
       voiceProfile.stopAudioStream()
     }
-  }, [passiveListening, assistantState, voiceProfile.hasProfile, activateAssistant])
+  }, [passiveListening, assistantState, showEnrollment, voiceProfile.hasProfile, activateAssistant])
 
   // ── Keyboard shortcuts ──
   useEffect(() => {
