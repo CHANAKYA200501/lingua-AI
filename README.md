@@ -1,6 +1,6 @@
-# 🌐 LinguaAI — AI-Powered Real-Time Translator
+#  LinguaAI — AI-Powered Real-Time Translator
 
-> Built for **Pinnacle Labs Internship** — A JARVIS-style AI translator with voice wake word ("Hey Chanakya"), live conversation translation, background mode, and PWA support for Android/iOS.
+>  A JARVIS-style AI translator with voice wake word ("Hey LEXA"), live conversation translation, background mode, and PWA support for Android/iOS.
 
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/Frontend-React%2018-61dafb?logo=react&logoColor=black)](https://react.dev)
@@ -10,24 +10,24 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Details |
 |---|---|
-| 🌍 **47 Languages** | Full language matrix including Hindi, Japanese, Arabic, Tamil, and more |
-| 🎤 **"Hey Chanakya" Wake Word** | Hands-free activation with voice biometric verification |
-| 🔊 **Bold Female Voice** | Auto-selects female TTS voice with commanding tone |
-| 🔴 **Live Conversation Translation** | Real-time speech capture, translation, and subtitles |
-| 🛡️ **Background Mode** | Keeps listening even when tab is hidden or phone is locked |
-| 📱 **PWA (Android + iOS)** | Installable on home screen with offline support |
-| 📊 **AI Summary** | Post-conversation analytics with speaker stats |
-| 📥 **Export (TXT/PDF)** | Download conversation transcripts |
-| 🕐 **Auto-translate** | Smart 900ms debounce for seamless real-time translation |
-| 📋 **History Panel** | Full translation history with SQLite persistence |
+|  **47 Languages** | Full language matrix including Hindi, Japanese, Arabic, Tamil, and more |
+|  **"Hey LEXA" Wake Word** | Hands-free activation with voice biometric verification |
+|  **Bold Female Voice** | Auto-selects female TTS voice with commanding tone |
+|  **Live Conversation Translation** | Real-time speech capture, translation, and subtitles |
+|  **Background Mode** | Keeps listening even when tab is hidden or phone is locked |
+|  **PWA (Android + iOS)** | Installable on home screen with offline support |
+|  **AI Summary** | Post-conversation analytics with speaker stats |
+|  **Export (TXT/PDF)** | Download conversation transcripts |
+|  **Auto-translate** | Smart 900ms debounce for seamless real-time translation |
+|  **History Panel** | Full translation history with SQLite persistence |
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 translator/
@@ -69,7 +69,7 @@ translator/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Option A: Using shell scripts
 
@@ -103,11 +103,11 @@ npm run dev
 
 **Then open:** [http://localhost:3000](http://localhost:3000) in **Chrome**
 
-> ⚠️ **Chrome is required** — Speech Recognition API is only fully supported in Chrome/Edge.
+>  **Chrome is required** — Speech Recognition API is only fully supported in Chrome/Edge.
 
 ---
 
-## 📱 Install on Phone (PWA)
+##  Install on Phone (PWA)
 
 | Platform | Steps |
 |---|---|
@@ -123,7 +123,7 @@ npm run dev
 
 | Say this... | Action |
 |---|---|
-| "Hey Chanakya" | Wake the assistant |
+| "Hey LEXA" | Wake the assistant |
 | "Translate hello to Spanish" | Translate text |
 | "Change output to French" | Change target language |
 | "Swap languages" | Swap source ↔ target |
@@ -134,7 +134,7 @@ npm run dev
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -174,7 +174,7 @@ POST /api/translate
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Frontend**: React 18, Vite, React Icons, React Hot Toast, Web Audio API  
 **Backend**: FastAPI, Uvicorn, deep-translator (Google Translate), langdetect  
@@ -184,9 +184,9 @@ POST /api/translate
 
 ---
 
-## 🎯 Internship Context
+##  Internship Context
 
-This project was built as part of the **Pinnacle Labs Internship** program, demonstrating:
+This project was built as part of the **Internship** program, demonstrating:
 - Full-stack development with modern tooling
 - AI/ML integration (translation engine, language detection, voice biometrics)
 - Real-time UX with voice capabilities & live translation
@@ -195,5 +195,3 @@ This project was built as part of the **Pinnacle Labs Internship** program, demo
 - Professional code architecture
 
 ---
-
-*Built with ❤️ for Pinnacle Labs · LinguaAI — Hey Chanakya*
